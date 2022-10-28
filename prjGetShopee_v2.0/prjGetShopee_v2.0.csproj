@@ -103,6 +103,7 @@
     <Compile Include="CustomizedCategory.cs">
       <DependentUpon>iSpanProject.tt</DependentUpon>
     </Compile>
+    <Compile Include="EdgeDriver.cs" />
     <Compile Include="FAQ.cs">
       <DependentUpon>iSpanProject.tt</DependentUpon>
     </Compile>
@@ -253,19 +254,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="iSpanProject.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>iSpanProject.Context.cs</LastGenOutput>
       <DependentUpon>iSpanProject.edmx</DependentUpon>
+      <LastGenOutput>iSpanProject.Context.cs</LastGenOutput>
     </Content>
     <Content Include="iSpanProject.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>iSpanProject.edmx</DependentUpon>
       <LastGenOutput>iSpanProject.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

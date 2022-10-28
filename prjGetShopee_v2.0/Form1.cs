@@ -12,6 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace prjGetShopee_v2._0
 {
     public partial class Form1 : Form
@@ -24,7 +25,7 @@ namespace prjGetShopee_v2._0
         private async void btnGetPanasonic_Click(object sender, EventArgs e)
         {
             Random random = new Random();
-            iSpanProjectEntities dbContext = new iSpanProjectEntities();
+            iSpanProjectEntities1 dbContext = new iSpanProjectEntities1();
             EdgeOptions edgeOptions = new EdgeOptions();
             edgeOptions.PageLoadStrategy = OpenQA.Selenium.PageLoadStrategy.Normal;
             EdgeDriver driver = new EdgeDriver(edgeOptions);
@@ -147,7 +148,7 @@ namespace prjGetShopee_v2._0
 
         private void btnGetSmallTpye_Click(object sender, EventArgs e)
         {
-            iSpanProjectEntities dbContext = new iSpanProjectEntities();
+            iSpanProjectEntities1 dbContext = new iSpanProjectEntities1();
             EdgeOptions edgeOptions = new EdgeOptions();
             edgeOptions.PageLoadStrategy = OpenQA.Selenium.PageLoadStrategy.Normal;
             EdgeDriver driver = new EdgeDriver(edgeOptions);
@@ -217,7 +218,7 @@ namespace prjGetShopee_v2._0
 
         private void button1_Click(object sender, EventArgs e)
         {
-            iSpanProjectEntities dbContext = new iSpanProjectEntities();
+            iSpanProjectEntities1 dbContext = new iSpanProjectEntities1();
             ProductDetail productDetail = new ProductDetail
             {
                 ProductID = 19,

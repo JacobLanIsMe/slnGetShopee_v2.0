@@ -13,10 +13,10 @@ namespace prjGetShopee_v2._0
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class iSpanProjectEntities : DbContext
+    public partial class iSpanProjectEntities1 : DbContext
     {
-        public iSpanProjectEntities()
-            : base("name=iSpanProjectEntities")
+        public iSpanProjectEntities1()
+            : base("name=iSpanProjectEntities1")
         {
         }
     
